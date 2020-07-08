@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#16092f"
+    >
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Search movies"
+            android:padding="10dp"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/ibSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black_24dp"
+
+
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:onClick="skokU"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvPopular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSearch"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="POPULAR MOVIES"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+
+
+
+        />
+
+    <ScrollView
+        android:id="@+id/svRecycler"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPopular"
+
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+
+            />
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Register"
+    android:background="#3e2871"
+    >
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Create new account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/llInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+
+            android:hint="Enter Full Name"
+            android:textColorHint="#ffff"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:shadowColor="@android:color/transparent"
+
+
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+
+            android:hint="Enter email"
+            android:textColorHint="#ffff"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:shadowColor="@android:color/transparent"
+
+
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+            android:textColorHint="#ffff"
+            android:hint="Enter Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:shadowColor="@android:color/transparent"
+
+
+            />
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:hint="Enter Phone number"
+            android:layout_marginTop="10dp"
+            android:shadowColor="@android:color/transparent"
+
+
+
+
+            />
+
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llInformation"
+        android:text="REGISTER"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:textSize="17sp"
+
+        />
+    <TextView
+        android:id="@+id/tvLoginHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:text="Already registered? Login here."
+        android:gravity="center"
+        android:textColor="#ffff"
+
+        />
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLoginHere"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+
+
+
+        />
+
+
+
+</RelativeLayout>

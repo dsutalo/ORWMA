@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/ivPicture1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <LinearLayout
+        android:id="@+id/informations1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_toEndOf="@id/ivPicture1">
+
+        <TextView
+            android:id="@+id/tvName1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tvRating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rating"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffff"
+
+            />
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/tvDescription1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:layout_marginTop="2dp"
+            android:textColor="#ffff"
+
+
+
+            app:trimExpandedText="Show more"
+            app:trimCollapsedText="Show less"
+            app:trimMode="trimModeLength"
+            app:trimLength="50"
+            app:colorClickableText="#ffff00"
+
+
+
+
+
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

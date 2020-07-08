@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <LinearLayout
+        android:id="@+id/informations"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_toEndOf="@id/ivPicture">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffff"
+
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffff"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rating"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#ffff"
+
+            />
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:layout_marginTop="2dp"
+            android:textColor="#ffff"
+
+
+
+
+            app:trimExpandedText="Show more"
+            app:trimCollapsedText="Show less"
+            app:trimMode="trimModeLength"
+            app:trimLength="50"
+            app:colorClickableText="#ffff00"
+
+
+
+
+
+
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/informations"
+        android:layout_centerVertical="true"
+
+
+
+        >
+        <ImageButton
+            android:id="@+id/ivFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
